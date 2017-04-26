@@ -2,13 +2,13 @@
 //  MC_HeaderTableViewCell.m
 //  MOOC
 //
-//  Created by 志强 on 17/4/23.
+//  Created by YunDongLi on 17/4/23.
 //  Copyright © 2017年 DingYahao. All rights reserved.
 //
 
-#import "MC_HeaderTableViewCell.h"
+#import "MC_HeaderCell.h"
 
-@implementation MC_HeaderTableViewCell
+@implementation MC_HeaderCell
 - (instancetype)initWithTableView:(UITableView *)tableView
 {
     self = [super init];
@@ -26,7 +26,11 @@
     // Initialization code
 }
 - (IBAction)training:(UIButton *)sender {
-    [self.pushDeleagte pushToViewController:[[UIViewController alloc]init]];
+    UIViewController * viewController = [[UIViewController alloc]init];
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
+        [self.pushDeleagte pushToViewController:viewController];
+    }
     NSLog(@"training");
 }
 - (IBAction)path:(UIButton *)sender {

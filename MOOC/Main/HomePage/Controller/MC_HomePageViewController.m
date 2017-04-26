@@ -31,7 +31,7 @@
 #pragma mark UITableViewDataSource
 //numberOfSections
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;{
-    return 2;
+    return 4;
 }
 //numberOfRowsInSection
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -49,25 +49,27 @@
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     return [self.serviceForHeaderViewAndCell viewOfSection:section];
 }
+
+////heightForFooter
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return RESIZE_UI(0.1);
+}
+//viewForFooter
+/*
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_HEIGHT, RESIZE_UI(20))];
+    footerView.backgroundColor = [UIColor redColor];
+    return footerView;
+}*/
 //HeightForRowAtIndexPath
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)   indexPath{
     return [self.serviceForHeaderViewAndCell heightForRowAtIndexPath:indexPath];
 }
-//heightForFooter
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return RESIZE_UI(30);
-}
-//viewForFooter
-- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    UIView *footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_HEIGHT, RESIZE_UI(20))];
-    footerView.backgroundColor = [UIColor grayColor];
-    return footerView;
-}
-
 #pragma mark setter&getter
 -(UITableView *)mainContent_TableView{
     if (!_mainContent_TableView) {
         _mainContent_TableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
+        _mainContent_TableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _mainContent_TableView;
 }

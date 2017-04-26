@@ -8,3 +8,5 @@
 "HomePageTitle" = "MOOC";
 "HomePageTitle" = "Course";
 "CourseTitle" = "Download";
+"CourseRecommendedTitle" = "CourseRecommended";
+"ChangeCourseRecommendedTitle" = "Change";
