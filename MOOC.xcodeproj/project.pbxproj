@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0474F93D1EA0A197002395EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474F93C1EA0A197002395EE /* main.m */; };
+		0474F9481EA0A197002395EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474F9471EA0A197002395EE /* Assets.xcassets */; };
+		04E26C141EA4AFD6007778C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E26C121EA4AFD6007778C1 /* LaunchScreen.storyboard */; };
+		04E9384D1EAF5F80008D6920 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9381A1EAF5F80008D6920 /* AppDelegate.m */; };
+		04E9384E1EAF5F80008D6920 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E9381C1EAF5F80008D6920 /* InfoPlist.strings */; };
+		04E9384F1EAF5F80008D6920 /* internationalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E9381E1EAF5F80008D6920 /* internationalization.strings */; };
+		04E938501EAF5F80008D6920 /* MC_CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E938251EAF5F80008D6920 /* MC_CourseViewController.m */; };
+		04E938511EAF5F80008D6920 /* MC_DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9382B1EAF5F80008D6920 /* MC_DownloadViewController.m */; };
+		04E938521EAF5F80008D6920 /* MC_HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E938311EAF5F80008D6920 /* MC_HomePageViewController.m */; };
+		04E938531EAF5F80008D6920 /* MC_HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E938371EAF5F80008D6920 /* MC_HeaderTableViewCell.m */; };
+		04E938541EAF5F80008D6920 /* MC_HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E938381EAF5F80008D6920 /* MC_HeaderTableViewCell.xib */; };
+		04E938551EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9383B1EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m */; };
+		04E938561EAF5F80008D6920 /* MC_Header_Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9383F1EAF5F80008D6920 /* MC_Header_Header.m */; };
+		04E938571EAF5F80008D6920 /* MC_MainControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E938421EAF5F80008D6920 /* MC_MainControllerViewController.m */; };
+		04E938581EAF5F80008D6920 /* MC_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E938461EAF5F80008D6920 /* MC_MineViewController.m */; };
+		04E938591EAF5F80008D6920 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9384C1EAF5F80008D6920 /* UIView+Frame.m */; };
+		BA10E376A5C08237B6B33A15 /* libPods-MOOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D994A27451854C008FA14C58 /* libPods-MOOC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0474F9381EA0A197002395EE /* MOOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0474F93C1EA0A197002395EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0474F9471EA0A197002395EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0474F94C1EA0A197002395EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E26C251EA4B0D2007778C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04E26C261EA4B0D8007778C1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		04E26C281EA4B3ED007778C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04E938191EAF5F80008D6920 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04E9381A1EAF5F80008D6920 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04E9381D1EAF5F80008D6920 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04E9381F1EAF5F80008D6920 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/internationalization.strings; sourceTree = "<group>"; };
+		04E938201EAF5F80008D6920 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		04E938211EAF5F80008D6920 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/internationalization.strings"; sourceTree = "<group>"; };
+		04E938241EAF5F80008D6920 /* MC_CourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_CourseViewController.h; sourceTree = "<group>"; };
+		04E938251EAF5F80008D6920 /* MC_CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_CourseViewController.m; sourceTree = "<group>"; };
+		04E9382A1EAF5F80008D6920 /* MC_DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_DownloadViewController.h; sourceTree = "<group>"; };
+		04E9382B1EAF5F80008D6920 /* MC_DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_DownloadViewController.m; sourceTree = "<group>"; };
+		04E938301EAF5F80008D6920 /* MC_HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_HomePageViewController.h; sourceTree = "<group>"; };
+		04E938311EAF5F80008D6920 /* MC_HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_HomePageViewController.m; sourceTree = "<group>"; };
+		04E938361EAF5F80008D6920 /* MC_HeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_HeaderTableViewCell.h; sourceTree = "<group>"; };
+		04E938371EAF5F80008D6920 /* MC_HeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_HeaderTableViewCell.m; sourceTree = "<group>"; };
+		04E938381EAF5F80008D6920 /* MC_HeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MC_HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		04E9383A1EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_ServiceForHeaderViewAndCell.h; sourceTree = "<group>"; };
+		04E9383B1EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_ServiceForHeaderViewAndCell.m; sourceTree = "<group>"; };
+		04E9383E1EAF5F80008D6920 /* MC_Header_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_Header_Header.h; sourceTree = "<group>"; };
+		04E9383F1EAF5F80008D6920 /* MC_Header_Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_Header_Header.m; sourceTree = "<group>"; };
+		04E938411EAF5F80008D6920 /* MC_MainControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_MainControllerViewController.h; sourceTree = "<group>"; };
+		04E938421EAF5F80008D6920 /* MC_MainControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_MainControllerViewController.m; sourceTree = "<group>"; };
+		04E938451EAF5F80008D6920 /* MC_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_MineViewController.h; sourceTree = "<group>"; };
+		04E938461EAF5F80008D6920 /* MC_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_MineViewController.m; sourceTree = "<group>"; };
+		04E9384A1EAF5F80008D6920 /* MOOCHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCHeader.pch; sourceTree = "<group>"; };
+		04E9384B1EAF5F80008D6920 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		04E9384C1EAF5F80008D6920 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		04E9385B1EAF5FFE008D6920 /* MC_PushToViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_PushToViewControllerProtocol.h; sourceTree = "<group>"; };
+		350FE540159103E38D109308 /* Pods-MOOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOOC/Pods-MOOC.debug.xcconfig"; sourceTree = "<group>"; };
+		9852E0654E0CE718799F9128 /* Pods-MOOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOOC/Pods-MOOC.release.xcconfig"; sourceTree = "<group>"; };
+		D994A27451854C008FA14C58 /* libPods-MOOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MOOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0474F9351EA0A197002395EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA10E376A5C08237B6B33A15 /* libPods-MOOC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0474F92F1EA0A197002395EE = {
+			isa = PBXGroup;
+			children = (
+				0474F93A1EA0A197002395EE /* MOOC */,
+				0474F9391EA0A197002395EE /* Products */,
+				D4957E79A1393318D9ECC2E2 /* Pods */,
+				4438330A3AEB6D25FEA11630 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0474F9391EA0A197002395EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0474F9381EA0A197002395EE /* MOOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0474F93A1EA0A197002395EE /* MOOC */ = {
+			isa = PBXGroup;
+			children = (
+				04E938171EAF5F80008D6920 /* Main */,
+				0474F93B1EA0A197002395EE /* Supporting Files */,
+			);
+			path = MOOC;
+			sourceTree = "<group>";
+		};
+		0474F93B1EA0A197002395EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04E26C121EA4AFD6007778C1 /* LaunchScreen.storyboard */,
+				0474F9471EA0A197002395EE /* Assets.xcassets */,
+				0474F94C1EA0A197002395EE /* Info.plist */,
+				0474F93C1EA0A197002395EE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04E938171EAF5F80008D6920 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04E9381B1EAF5F80008D6920 /* Config */,
+				04E938181EAF5F80008D6920 /* AppDelegate */,
+				04E938401EAF5F80008D6920 /* MainController */,
+				04E9382E1EAF5F80008D6920 /* HomePage */,
+				04E938221EAF5F80008D6920 /* Course */,
+				04E938281EAF5F80008D6920 /* Download */,
+				04E938431EAF5F80008D6920 /* Mine */,
+				04E938491EAF5F80008D6920 /* Other */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04E938181EAF5F80008D6920 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				04E938191EAF5F80008D6920 /* AppDelegate.h */,
+				04E9381A1EAF5F80008D6920 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		04E9381B1EAF5F80008D6920 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				04E9381C1EAF5F80008D6920 /* InfoPlist.strings */,
+				04E9381E1EAF5F80008D6920 /* internationalization.strings */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		04E938221EAF5F80008D6920 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				04E938231EAF5F80008D6920 /* Controller */,
+				04E938261EAF5F80008D6920 /* Model */,
+				04E938271EAF5F80008D6920 /* View */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		04E938231EAF5F80008D6920 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E938241EAF5F80008D6920 /* MC_CourseViewController.h */,
+				04E938251EAF5F80008D6920 /* MC_CourseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04E938261EAF5F80008D6920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E938271EAF5F80008D6920 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04E938281EAF5F80008D6920 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				04E938291EAF5F80008D6920 /* Controller */,
+				04E9382C1EAF5F80008D6920 /* Model */,
+				04E9382D1EAF5F80008D6920 /* View */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		04E938291EAF5F80008D6920 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E9382A1EAF5F80008D6920 /* MC_DownloadViewController.h */,
+				04E9382B1EAF5F80008D6920 /* MC_DownloadViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04E9382C1EAF5F80008D6920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E9382D1EAF5F80008D6920 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04E9382E1EAF5F80008D6920 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				04E9382F1EAF5F80008D6920 /* Controller */,
+				04E938321EAF5F80008D6920 /* Model */,
+				04E938331EAF5F80008D6920 /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		04E9382F1EAF5F80008D6920 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E938301EAF5F80008D6920 /* MC_HomePageViewController.h */,
+				04E938311EAF5F80008D6920 /* MC_HomePageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04E938321EAF5F80008D6920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E938331EAF5F80008D6920 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04E9385A1EAF5FC0008D6920 /* Delegate */,
+				04E938391EAF5F80008D6920 /* Config */,
+				04E9383C1EAF5F80008D6920 /* Headers */,
+				04E938341EAF5F80008D6920 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04E938341EAF5F80008D6920 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04E938351EAF5F80008D6920 /* HeaderCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		04E938351EAF5F80008D6920 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				04E938361EAF5F80008D6920 /* MC_HeaderTableViewCell.h */,
+				04E938371EAF5F80008D6920 /* MC_HeaderTableViewCell.m */,
+				04E938381EAF5F80008D6920 /* MC_HeaderTableViewCell.xib */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		04E938391EAF5F80008D6920 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				04E9383A1EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.h */,
+				04E9383B1EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		04E9383C1EAF5F80008D6920 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				04E9383D1EAF5F80008D6920 /* Header */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		04E9383D1EAF5F80008D6920 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				04E9383E1EAF5F80008D6920 /* MC_Header_Header.h */,
+				04E9383F1EAF5F80008D6920 /* MC_Header_Header.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		04E938401EAF5F80008D6920 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				04E938411EAF5F80008D6920 /* MC_MainControllerViewController.h */,
+				04E938421EAF5F80008D6920 /* MC_MainControllerViewController.m */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		04E938431EAF5F80008D6920 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				04E938441EAF5F80008D6920 /* Controller */,
+				04E938471EAF5F80008D6920 /* Model */,
+				04E938481EAF5F80008D6920 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		04E938441EAF5F80008D6920 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E938451EAF5F80008D6920 /* MC_MineViewController.h */,
+				04E938461EAF5F80008D6920 /* MC_MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04E938471EAF5F80008D6920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E938481EAF5F80008D6920 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04E938491EAF5F80008D6920 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				04E9384A1EAF5F80008D6920 /* MOOCHeader.pch */,
+				04E9384B1EAF5F80008D6920 /* UIView+Frame.h */,
+				04E9384C1EAF5F80008D6920 /* UIView+Frame.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		04E9385A1EAF5FC0008D6920 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				04E9385B1EAF5FFE008D6920 /* MC_PushToViewControllerProtocol.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		4438330A3AEB6D25FEA11630 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D994A27451854C008FA14C58 /* libPods-MOOC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4957E79A1393318D9ECC2E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				350FE540159103E38D109308 /* Pods-MOOC.debug.xcconfig */,
+				9852E0654E0CE718799F9128 /* Pods-MOOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0474F9371EA0A197002395EE /* MOOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0474F94F1EA0A197002395EE /* Build configuration list for PBXNativeTarget "MOOC" */;
+			buildPhases = (
+				D346572280C8DE058D5DD6C8 /* [CP] Check Pods Manifest.lock */,
+				0474F9341EA0A197002395EE /* Sources */,
+				0474F9351EA0A197002395EE /* Frameworks */,
+				0474F9361EA0A197002395EE /* Resources */,
+				0AF1BC118DD0795123BFE96E /* [CP] Embed Pods Frameworks */,
+				11D8FCD3C55CC129F4E7FF44 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MOOC;
+			productName = MOOC;
+			productReference = 0474F9381EA0A197002395EE /* MOOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0474F9301EA0A197002395EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC_;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = DingYahao;
+				TargetAttributes = {
+					0474F9371EA0A197002395EE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0474F9331EA0A197002395EE /* Build configuration list for PBXProject "MOOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"zh-Hans",
+				Base,
+				en,
+			);
+			mainGroup = 0474F92F1EA0A197002395EE;
+			productRefGroup = 0474F9391EA0A197002395EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0474F9371EA0A197002395EE /* MOOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0474F9361EA0A197002395EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E26C141EA4AFD6007778C1 /* LaunchScreen.storyboard in Resources */,
+				04E938541EAF5F80008D6920 /* MC_HeaderTableViewCell.xib in Resources */,
+				04E9384E1EAF5F80008D6920 /* InfoPlist.strings in Resources */,
+				04E9384F1EAF5F80008D6920 /* internationalization.strings in Resources */,
+				0474F9481EA0A197002395EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AF1BC118DD0795123BFE96E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOOC/Pods-MOOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11D8FCD3C55CC129F4E7FF44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOOC/Pods-MOOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D346572280C8DE058D5DD6C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0474F9341EA0A197002395EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E938531EAF5F80008D6920 /* MC_HeaderTableViewCell.m in Sources */,
+				04E938551EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m in Sources */,
+				04E938511EAF5F80008D6920 /* MC_DownloadViewController.m in Sources */,
+				04E9384D1EAF5F80008D6920 /* AppDelegate.m in Sources */,
+				0474F93D1EA0A197002395EE /* main.m in Sources */,
+				04E938581EAF5F80008D6920 /* MC_MineViewController.m in Sources */,
+				04E938571EAF5F80008D6920 /* MC_MainControllerViewController.m in Sources */,
+				04E938561EAF5F80008D6920 /* MC_Header_Header.m in Sources */,
+				04E938501EAF5F80008D6920 /* MC_CourseViewController.m in Sources */,
+				04E938521EAF5F80008D6920 /* MC_HomePageViewController.m in Sources */,
+				04E938591EAF5F80008D6920 /* UIView+Frame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04E26C121EA4AFD6007778C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E26C251EA4B0D2007778C1 /* en */,
+				04E26C261EA4B0D8007778C1 /* zh-Hans */,
+				04E26C281EA4B3ED007778C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04E9381C1EAF5F80008D6920 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E9381D1EAF5F80008D6920 /* en */,
+				04E938201EAF5F80008D6920 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04E9381E1EAF5F80008D6920 /* internationalization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E9381F1EAF5F80008D6920 /* en */,
+				04E938211EAF5F80008D6920 /* zh-Hans */,
+			);
+			name = internationalization.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0474F94D1EA0A197002395EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0474F94E1EA0A197002395EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0474F9501EA0A197002395EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 350FE540159103E38D109308 /* Pods-MOOC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MOOC/Main/Other/MOOCHeader.pch";
+				INFOPLIST_FILE = MOOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingyahao.www.MOOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0474F9511EA0A197002395EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9852E0654E0CE718799F9128 /* Pods-MOOC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MOOC/Main/Other/MOOCHeader.pch";
+				INFOPLIST_FILE = MOOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingyahao.www.MOOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0474F9331EA0A197002395EE /* Build configuration list for PBXProject "MOOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0474F94D1EA0A197002395EE /* Debug */,
+				0474F94E1EA0A197002395EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0474F94F1EA0A197002395EE /* Build configuration list for PBXNativeTarget "MOOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0474F9501EA0A197002395EE /* Debug */,
+				0474F9511EA0A197002395EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0474F9301EA0A197002395EE /* Project object */;
+}

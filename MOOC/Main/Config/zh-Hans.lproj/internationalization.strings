@@ -1,0 +1,10 @@
+/* 
+  internationalization.strings
+  MOOC
+
+  Created by YunDongLi on 2017/4/17.
+  Copyright © 2017年 DingYahao. All rights reserved.
+*/
+"HomePageTitle" = "慕课网";
+"CourseTitle" = "课程";
+"DownloadTitle" = "下载";

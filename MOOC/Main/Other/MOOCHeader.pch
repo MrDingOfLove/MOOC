@@ -1,0 +1,21 @@
+//
+//  MOOCHeader.pch
+//  MOOC
+//
+//  Created by YunDongLi on 2017/4/14.
+//  Copyright © 2017年 DingYahao. All rights reserved.
+//
+
+#ifndef MOOCHeader_pch
+#define MOOCHeader_pch
+//Screen
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define RESIZE_UI(float) ((float) / 375.0f * SCREEN_WIDTH)//基于iPhone 6s屏幕
+#import "UIColor+HexString.h"
+//UIView+Frame
+#import "UIView+Frame.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MOOCHeader_pch */
