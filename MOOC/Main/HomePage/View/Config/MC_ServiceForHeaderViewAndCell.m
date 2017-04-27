@@ -10,7 +10,7 @@
 #import "MC_PushToViewControllerProtocol.h"
 #import "MC_Header_Header.h"
 #import "MC_HeaderCell.h"
-#import "MC_CourseRecommendHeader.h"
+#import "MC_SectionHeader.h"
 #import "MC_CourseRecommendCell.h"
 @interface MC_ServiceForHeaderViewAndCell()<MC_PushToViewControllerProtocol>
 //填充的数据
@@ -22,9 +22,12 @@
 @property (nonatomic,strong) MC_Header_Header * header_HeaderView;
 @property (nonatomic,strong) MC_HeaderCell * headerTableViewCell;
 /**
+ *  Scetion HeaderView
+ */
+@property (nonatomic,strong) MC_SectionHeader * sectionHeader;
+/**
  *  Course Recommend
  */
-@property (nonatomic,strong) MC_CourseRecommendHeader * courseRecommendHeader;
 @property (nonatomic,strong) MC_CourseRecommendCell * courseRecommendCell;
 
 @property (nonatomic,strong) UITableView * tableView;
@@ -50,7 +53,7 @@
             return RESIZE_UI(60);
             break;
         case 2:
-            return RESIZE_UI(80);
+            return RESIZE_UI(60);
             break;
         default:
             return RESIZE_UI(0);
@@ -61,15 +64,20 @@
  *  ViewForHeader
  */
 -(UIView *)viewOfSection:(NSInteger)section{
+    MC_SectionHeader * sectionHeader = nil;
     switch (section) {
         case 0:
             return self.header_HeaderView;
             break;
         case 1:
-            return self.courseRecommendHeader;
+            sectionHeader = self.sectionHeader;
+            [sectionHeader configWithBackgroundColor:[UIColor clearColor] imageName:@"recommend"title:NSLocalizedStringFromTable(@"CourseRecommendedTitle", @"internationalization", nil) changeTitle:NSLocalizedStringFromTable(@"ChangeCourseRecommendedTitle", @"internationalization", nil)];
+            return sectionHeader;
             break;
         case 2:
-            return self.v;
+            sectionHeader = self.sectionHeader;
+            [sectionHeader configWithBackgroundColor:[UIColor whiteColor] imageName:@"recommend"title:NSLocalizedStringFromTable(@"PathTitle", @"internationalization", nil) changeTitle:NSLocalizedStringFromTable(@"ChangeCourseRecommendedTitle", @"internationalization", nil)];
+            return sectionHeader;
             break;
             
         default:
@@ -87,6 +95,9 @@
             break;
         case 1:
             return 1;
+            break;
+        case 2:
+            return 3;
             break;
         default:
             return 1;
@@ -122,7 +133,9 @@
         case 1:
             return RESIZE_UI(350);
             break;
-            
+        case 2:
+            return RESIZE_UI(100);
+            break;
         default:
             return RESIZE_UI(50);
             break;
@@ -148,21 +161,22 @@
     return _headerTableViewCell;
 }
 /**
+ *  ScetionHeaderView
+ */
+-(MC_SectionHeader *)sectionHeader{
+    _sectionHeader = [[MC_SectionHeader alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, RESIZE_UI(60)) data:self.data];
+    return _sectionHeader;
+}
+/**
  *  Course Recommend
  */
--(MC_CourseRecommendHeader *)courseRecommendHeader{
-    if (!_courseRecommendHeader){
-        _courseRecommendHeader = [[MC_CourseRecommendHeader alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, RESIZE_UI(60)) data:self.data];
-    }
-    return _courseRecommendHeader;
-}
 -(MC_CourseRecommendCell *)courseRecommendCell{
     _courseRecommendCell = [[MC_CourseRecommendCell alloc]initWithTableView:self.tableView];
     _courseRecommendCell.pushDeleagte = self;
     return _courseRecommendCell;
 }
 -(UIView *)v{
-    _v = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, RESIZE_UI(80))];
+    _v = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, RESIZE_UI(60))];
     _v.backgroundColor = [UIColor redColor];
     return _v;
 }

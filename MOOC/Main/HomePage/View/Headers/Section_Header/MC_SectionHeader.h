@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MC_CourseRecommendHeader : UIView
+@interface MC_SectionHeader : UIView
 -(instancetype)initWithFrame:(CGRect)frame data:(NSObject*)data;
+-(void)configWithBackgroundColor:(UIColor *)backgroundColor imageName:(NSString *)imageName title:(NSString*)title changeTitle:(NSString*)changeTitle;
 @end

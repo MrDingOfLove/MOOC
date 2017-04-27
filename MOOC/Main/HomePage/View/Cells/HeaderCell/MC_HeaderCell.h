@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MC_PushToViewControllerProtocol.h"
 @interface MC_HeaderCell : UITableViewCell
+@property (nonatomic,strong) NSObject * model;
 @property (nonatomic,weak) id<MC_PushToViewControllerProtocol> pushDeleagte;
 -(instancetype)initWithTableView:(UITableView*)tableView;
 @end

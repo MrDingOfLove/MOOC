@@ -21,13 +21,13 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a09-q8-ePh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQD-KR-G5Z">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQD-KR-G5Z" customClass="MC_SubView">
                                 <rect key="frame" x="15" y="0.0" width="167.5" height="150"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbx-rL-Njo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbx-rL-Njo" customClass="MC_SubView">
                                 <rect key="frame" x="192.5" y="0.0" width="167.5" height="150"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -45,13 +45,13 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8v-hT-1DJ">
                         <rect key="frame" x="0.0" y="165" width="375" height="164.5"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmx-eO-3ui">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmx-eO-3ui" customClass="MC_SubView">
                                 <rect key="frame" x="15" y="0.0" width="167.5" height="154.5"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-dX-Cw5">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-dX-Cw5" customClass="MC_SubView">
                                 <rect key="frame" x="192.5" y="0.0" width="167.5" height="154.5"/>
-                                <color key="backgroundColor" red="1" green="0.44708896250000002" blue="0.47048804579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -80,7 +80,13 @@
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="-315" y="17"/>
+            <connections>
+                <outlet property="four" destination="KFH-dX-Cw5" id="6Zt-bp-6Bd"/>
+                <outlet property="one" destination="QQD-KR-G5Z" id="qEk-SG-qbS"/>
+                <outlet property="three" destination="bmx-eO-3ui" id="M7Y-Br-hJT"/>
+                <outlet property="two" destination="tbx-rL-Njo" id="RYG-WR-Dtr"/>
+            </connections>
+            <point key="canvasLocation" x="-819" y="-67"/>
         </tableViewCell>
     </objects>
 </document>

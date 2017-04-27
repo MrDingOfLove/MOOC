@@ -31,7 +31,7 @@
 #pragma mark UITableViewDataSource
 //numberOfSections
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;{
-    return 4;
+    return 7;
 }
 //numberOfRowsInSection
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

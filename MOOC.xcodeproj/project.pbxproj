@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045E9A7B1EB1FEAC00619DD4 /* MC_SubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E9A7A1EB1FEAC00619DD4 /* MC_SubView.m */; };
+		045E9A7F1EB1FEE600619DD4 /* MC_SubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045E9A7E1EB1FEE600619DD4 /* MC_SubView.xib */; };
 		0474F93D1EA0A197002395EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474F93C1EA0A197002395EE /* main.m */; };
 		0474F9481EA0A197002395EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474F9471EA0A197002395EE /* Assets.xcassets */; };
 		04C797D01EB065FB00E276A5 /* MC_CourseRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C797CE1EB065FB00E276A5 /* MC_CourseRecommendCell.m */; };
 		04C797D11EB065FB00E276A5 /* MC_CourseRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C797CF1EB065FB00E276A5 /* MC_CourseRecommendCell.xib */; };
-		04C797D41EB0660D00E276A5 /* MC_CourseRecommendHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C797D31EB0660D00E276A5 /* MC_CourseRecommendHeader.m */; };
 		04E26C141EA4AFD6007778C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E26C121EA4AFD6007778C1 /* LaunchScreen.storyboard */; };
 		04E9384D1EAF5F80008D6920 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9381A1EAF5F80008D6920 /* AppDelegate.m */; };
 		04E9384E1EAF5F80008D6920 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E9381C1EAF5F80008D6920 /* InfoPlist.strings */; };
@@ -22,14 +23,18 @@
 		04E938531EAF5F80008D6920 /* MC_HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E938371EAF5F80008D6920 /* MC_HeaderCell.m */; };
 		04E938541EAF5F80008D6920 /* MC_HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E938381EAF5F80008D6920 /* MC_HeaderCell.xib */; };
 		04E938551EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9383B1EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m */; };
-		04E938561EAF5F80008D6920 /* MC_Header_Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9383F1EAF5F80008D6920 /* MC_Header_Header.m */; };
 		04E938571EAF5F80008D6920 /* MC_MainControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E938421EAF5F80008D6920 /* MC_MainControllerViewController.m */; };
 		04E938581EAF5F80008D6920 /* MC_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E938461EAF5F80008D6920 /* MC_MineViewController.m */; };
 		04E938591EAF5F80008D6920 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9384C1EAF5F80008D6920 /* UIView+Frame.m */; };
+		04EE7A621EB1D0EF00828A02 /* MC_Header_Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE7A601EB1D0EF00828A02 /* MC_Header_Header.m */; };
+		04EE7A661EB1D18700828A02 /* MC_SectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE7A651EB1D18700828A02 /* MC_SectionHeader.m */; };
 		BA10E376A5C08237B6B33A15 /* libPods-MOOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D994A27451854C008FA14C58 /* libPods-MOOC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045E9A791EB1FEAC00619DD4 /* MC_SubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_SubView.h; sourceTree = "<group>"; };
+		045E9A7A1EB1FEAC00619DD4 /* MC_SubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_SubView.m; sourceTree = "<group>"; };
+		045E9A7E1EB1FEE600619DD4 /* MC_SubView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MC_SubView.xib; sourceTree = "<group>"; };
 		0474F9381EA0A197002395EE /* MOOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474F93C1EA0A197002395EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0474F9471EA0A197002395EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,8 +42,6 @@
 		04C797CD1EB065FB00E276A5 /* MC_CourseRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_CourseRecommendCell.h; sourceTree = "<group>"; };
 		04C797CE1EB065FB00E276A5 /* MC_CourseRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_CourseRecommendCell.m; sourceTree = "<group>"; };
 		04C797CF1EB065FB00E276A5 /* MC_CourseRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MC_CourseRecommendCell.xib; sourceTree = "<group>"; };
-		04C797D21EB0660D00E276A5 /* MC_CourseRecommendHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_CourseRecommendHeader.h; sourceTree = "<group>"; };
-		04C797D31EB0660D00E276A5 /* MC_CourseRecommendHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_CourseRecommendHeader.m; sourceTree = "<group>"; };
 		04E26C251EA4B0D2007778C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04E26C261EA4B0D8007778C1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		04E26C281EA4B3ED007778C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,8 +62,6 @@
 		04E938381EAF5F80008D6920 /* MC_HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MC_HeaderCell.xib; sourceTree = "<group>"; };
 		04E9383A1EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_ServiceForHeaderViewAndCell.h; sourceTree = "<group>"; };
 		04E9383B1EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_ServiceForHeaderViewAndCell.m; sourceTree = "<group>"; };
-		04E9383E1EAF5F80008D6920 /* MC_Header_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_Header_Header.h; sourceTree = "<group>"; };
-		04E9383F1EAF5F80008D6920 /* MC_Header_Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_Header_Header.m; sourceTree = "<group>"; };
 		04E938411EAF5F80008D6920 /* MC_MainControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_MainControllerViewController.h; sourceTree = "<group>"; };
 		04E938421EAF5F80008D6920 /* MC_MainControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_MainControllerViewController.m; sourceTree = "<group>"; };
 		04E938451EAF5F80008D6920 /* MC_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_MineViewController.h; sourceTree = "<group>"; };
@@ -69,6 +70,10 @@
 		04E9384B1EAF5F80008D6920 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		04E9384C1EAF5F80008D6920 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		04E9385B1EAF5FFE008D6920 /* MC_PushToViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_PushToViewControllerProtocol.h; sourceTree = "<group>"; };
+		04EE7A5F1EB1D0EF00828A02 /* MC_Header_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_Header_Header.h; sourceTree = "<group>"; };
+		04EE7A601EB1D0EF00828A02 /* MC_Header_Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_Header_Header.m; sourceTree = "<group>"; };
+		04EE7A641EB1D18700828A02 /* MC_SectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_SectionHeader.h; sourceTree = "<group>"; };
+		04EE7A651EB1D18700828A02 /* MC_SectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_SectionHeader.m; sourceTree = "<group>"; };
 		350FE540159103E38D109308 /* Pods-MOOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOOC/Pods-MOOC.debug.xcconfig"; sourceTree = "<group>"; };
 		9852E0654E0CE718799F9128 /* Pods-MOOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOOC/Pods-MOOC.release.xcconfig"; sourceTree = "<group>"; };
 		D994A27451854C008FA14C58 /* libPods-MOOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MOOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +91,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045E9A781EB1FE9A00619DD4 /* SubCell */ = {
+			isa = PBXGroup;
+			children = (
+				045E9A791EB1FEAC00619DD4 /* MC_SubView.h */,
+				045E9A7A1EB1FEAC00619DD4 /* MC_SubView.m */,
+				045E9A7E1EB1FEE600619DD4 /* MC_SubView.xib */,
+			);
+			path = SubCell;
+			sourceTree = "<group>";
+		};
 		0474F92F1EA0A197002395EE = {
 			isa = PBXGroup;
 			children = (
@@ -124,18 +139,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		04C797CB1EB065C900E276A5 /* CourseRecommend */ = {
-			isa = PBXGroup;
-			children = (
-				04C797D21EB0660D00E276A5 /* MC_CourseRecommendHeader.h */,
-				04C797D31EB0660D00E276A5 /* MC_CourseRecommendHeader.m */,
-			);
-			path = CourseRecommend;
-			sourceTree = "<group>";
-		};
 		04C797CC1EB065DE00E276A5 /* CourseRecommendCell */ = {
 			isa = PBXGroup;
 			children = (
+				045E9A781EB1FE9A00619DD4 /* SubCell */,
 				04C797CD1EB065FB00E276A5 /* MC_CourseRecommendCell.h */,
 				04C797CE1EB065FB00E276A5 /* MC_CourseRecommendCell.m */,
 				04C797CF1EB065FB00E276A5 /* MC_CourseRecommendCell.xib */,
@@ -273,7 +280,7 @@
 			children = (
 				04E9385A1EAF5FC0008D6920 /* Delegate */,
 				04E938391EAF5F80008D6920 /* Config */,
-				04E9383C1EAF5F80008D6920 /* Headers */,
+				04EE7A5A1EB1D0EF00828A02 /* Headers */,
 				04E938341EAF5F80008D6920 /* Cells */,
 			);
 			path = View;
@@ -305,24 +312,6 @@
 				04E9383B1EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		04E9383C1EAF5F80008D6920 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				04E9383D1EAF5F80008D6920 /* Header */,
-				04C797CB1EB065C900E276A5 /* CourseRecommend */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		04E9383D1EAF5F80008D6920 /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				04E9383E1EAF5F80008D6920 /* MC_Header_Header.h */,
-				04E9383F1EAF5F80008D6920 /* MC_Header_Header.m */,
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 		04E938401EAF5F80008D6920 /* MainController */ = {
@@ -383,6 +372,33 @@
 				04E9385B1EAF5FFE008D6920 /* MC_PushToViewControllerProtocol.h */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		04EE7A5A1EB1D0EF00828A02 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				04EE7A5E1EB1D0EF00828A02 /* Header_Header */,
+				04EE7A631EB1D18700828A02 /* Section_Header */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		04EE7A5E1EB1D0EF00828A02 /* Header_Header */ = {
+			isa = PBXGroup;
+			children = (
+				04EE7A5F1EB1D0EF00828A02 /* MC_Header_Header.h */,
+				04EE7A601EB1D0EF00828A02 /* MC_Header_Header.m */,
+			);
+			path = Header_Header;
+			sourceTree = "<group>";
+		};
+		04EE7A631EB1D18700828A02 /* Section_Header */ = {
+			isa = PBXGroup;
+			children = (
+				04EE7A641EB1D18700828A02 /* MC_SectionHeader.h */,
+				04EE7A651EB1D18700828A02 /* MC_SectionHeader.m */,
+			);
+			path = Section_Header;
 			sourceTree = "<group>";
 		};
 		4438330A3AEB6D25FEA11630 /* Frameworks */ = {
@@ -465,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045E9A7F1EB1FEE600619DD4 /* MC_SubView.xib in Resources */,
 				04E26C141EA4AFD6007778C1 /* LaunchScreen.storyboard in Resources */,
 				04E938541EAF5F80008D6920 /* MC_HeaderCell.xib in Resources */,
 				04E9384E1EAF5F80008D6920 /* InfoPlist.strings in Resources */,
@@ -532,15 +549,16 @@
 				04E938531EAF5F80008D6920 /* MC_HeaderCell.m in Sources */,
 				04E938551EAF5F80008D6920 /* MC_ServiceForHeaderViewAndCell.m in Sources */,
 				04E938511EAF5F80008D6920 /* MC_DownloadViewController.m in Sources */,
+				04EE7A621EB1D0EF00828A02 /* MC_Header_Header.m in Sources */,
 				04E9384D1EAF5F80008D6920 /* AppDelegate.m in Sources */,
 				0474F93D1EA0A197002395EE /* main.m in Sources */,
 				04C797D01EB065FB00E276A5 /* MC_CourseRecommendCell.m in Sources */,
+				045E9A7B1EB1FEAC00619DD4 /* MC_SubView.m in Sources */,
 				04E938581EAF5F80008D6920 /* MC_MineViewController.m in Sources */,
-				04C797D41EB0660D00E276A5 /* MC_CourseRecommendHeader.m in Sources */,
 				04E938571EAF5F80008D6920 /* MC_MainControllerViewController.m in Sources */,
-				04E938561EAF5F80008D6920 /* MC_Header_Header.m in Sources */,
 				04E938501EAF5F80008D6920 /* MC_CourseViewController.m in Sources */,
 				04E938521EAF5F80008D6920 /* MC_HomePageViewController.m in Sources */,
+				04EE7A661EB1D18700828A02 /* MC_SectionHeader.m in Sources */,
 				04E938591EAF5F80008D6920 /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
