@@ -41,6 +41,7 @@
     return [self.serviceForHeaderViewAndCell cellForTableView:tableView sectionAtIndexPath:indexPath];
 }
 #pragma mark UITableViewDelegate
+
 //heightForHeader
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return [self.serviceForHeaderViewAndCell heightOfSection:section];
@@ -69,6 +70,7 @@
 -(UITableView *)mainContent_TableView{
     if (!_mainContent_TableView) {
         _mainContent_TableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
+        _mainContent_TableView.backgroundColor  = [UIColor whiteColor];
         _mainContent_TableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _mainContent_TableView;

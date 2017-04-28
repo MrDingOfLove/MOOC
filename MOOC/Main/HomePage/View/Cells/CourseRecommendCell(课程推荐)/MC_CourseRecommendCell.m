@@ -24,6 +24,7 @@
         self = [tableView dequeueReusableCellWithIdentifier:identifier];
         if(!self){
             self = [[[NSBundle mainBundle] loadNibNamed:identifier owner:nil options:nil] lastObject];
+            self.backgroundColor = [UIColor colorWithHexString:@"f0f2f5"];
             [self setInformation];
             [self initForPushBlock];
         }
