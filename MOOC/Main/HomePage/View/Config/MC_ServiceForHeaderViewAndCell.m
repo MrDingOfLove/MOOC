@@ -14,6 +14,9 @@
 #import "MC_CourseRecommendCell.h"
 #import "MC_CareerPathCell.h"
 #import "MC_AdvertisingCell.h"
+#import "MC_CombatRecommendCell.h"
+#import "MC_TeacherRecommendedCell.h"
+#import "MC_GuessYouLikeCell.h"
 @interface MC_ServiceForHeaderViewAndCell()<MC_PushToViewControllerProtocol>
 @property (nonatomic,strong) UITableView * tableView;
 //填充的数据
@@ -40,7 +43,18 @@
  *  Advertising(广告)
  */
 @property (nonatomic,strong) MC_AdvertisingCell * advertisingCell;
-
+/**
+ *  CombatRecommend(实战推荐)
+ */
+@property (nonatomic,strong) MC_CombatRecommendCell * combatRecommendCell;
+/**
+ *  TeacherRecommended(名师推荐)
+ */
+@property (nonatomic,strong) MC_TeacherRecommendedCell * teacherRecommendedCell;
+/**
+ *  GuessYouLike(猜你喜欢)
+ */
+@property (nonatomic,strong) MC_GuessYouLikeCell * guessYouLikeCell;
 @end
 @implementation MC_ServiceForHeaderViewAndCell
 - (instancetype)initWithData:(NSObject *)data
@@ -60,9 +74,11 @@
             return RESIZE_UI(160);
             break;
         case 1:
-            return RESIZE_UI(60);
-            break;
         case 2:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
             return RESIZE_UI(60);
             break;
         case 3:
@@ -89,11 +105,31 @@
             break;
         case 2:
             sectionHeader = self.sectionHeader;
-            [sectionHeader configWithBackgroundColor:[UIColor whiteColor] imageName:@"recommend"title:NSLocalizedStringFromTable(@"PathTitle", @"internationalization", nil) changeTitle:NSLocalizedStringFromTable(@"ChangeCourseRecommendedTitle", @"internationalization", nil)];
+            [sectionHeader configWithBackgroundColor:nil imageName:@"recommend"title:NSLocalizedStringFromTable(@"PathTitle", @"internationalization", nil) changeTitle:NSLocalizedStringFromTable(@"ChangeCourseRecommendedTitle", @"internationalization", nil)];
             return sectionHeader;
             break;
         case 3:
             return self.emptyHeaderView;
+            break;
+        case 4:
+            sectionHeader = self.sectionHeader;
+            [sectionHeader configWithBackgroundColor:[UIColor colorWithHexString:@"f0f2f5"] imageName:@"recommend"title:NSLocalizedStringFromTable(@"CombatRecommend", @"internationalization", nil) changeTitle:NSLocalizedStringFromTable(@"ChangeCourseRecommendedTitle", @"internationalization", nil)];
+            return sectionHeader;
+            break;
+        case 5:
+            sectionHeader = self.sectionHeader;
+            [sectionHeader configWithBackgroundColor:nil imageName:@"recommend"title:NSLocalizedStringFromTable(@"NewCourse", @"internationalization", nil) changeTitle:NSLocalizedStringFromTable(@"ChangeCourseRecommendedTitle", @"internationalization", nil)];
+            return sectionHeader;
+            break;
+        case 6:
+            sectionHeader = self.sectionHeader;
+            [sectionHeader configWithBackgroundColor:[UIColor colorWithHexString:@"f0f2f5"] imageName:nil title:NSLocalizedStringFromTable(@"TeacherRecommended", @"internationalization", nil) changeTitle:nil];
+            return sectionHeader;
+            break;
+        case 7:
+            sectionHeader = self.sectionHeader;
+            [sectionHeader configWithBackgroundColor:[UIColor colorWithHexString:@"f0f2f5"] imageName:@"recommend" title:NSLocalizedStringFromTable(@"GuessYouLike", @"internationalization", nil) changeTitle:nil];
+            return sectionHeader;
             break;
         default:
             return nil;
@@ -109,13 +145,17 @@
             return 1;
             break;
         case 1:
+        case 3:
+        case 4:
+        case 6:
             return 1;
             break;
         case 2:
+        case 5:
             return 3;
             break;
-        case 3:
-            return 1;
+        case 7:
+            return 5;//实际是用该返回数组的长度
             break;
         default:
             return 1;
@@ -140,7 +180,18 @@
         case 3:
             return self.advertisingCell;
             break;
-            
+        case 4:
+            return self.combatRecommendCell;
+            break;
+        case 5:
+            return self.careerPathCell;
+            break;
+        case 6:
+            return self.teacherRecommendedCell;
+            break;
+        case 7:
+            return self.guessYouLikeCell;
+            break;
         default:
             return [[UITableViewCell alloc]init];
             break;
@@ -162,6 +213,18 @@
             break;
         case 3:
             return RESIZE_UI(140);
+            break;
+        case 4:
+            return RESIZE_UI(495);
+            break;
+        case 5:
+            return RESIZE_UI(100);
+            break;
+        case 6:
+            return RESIZE_UI(100);
+            break;
+        case 7:
+            return RESIZE_UI(165);
             break;
         default:
             return RESIZE_UI(50);
@@ -217,6 +280,30 @@
     _advertisingCell = [[MC_AdvertisingCell alloc]initWithTableView:self.tableView];
     _advertisingCell.pushDeleagte = self;
     return _advertisingCell;
+}
+/**
+ *  CombatRecommend
+ */
+-(MC_CombatRecommendCell *)combatRecommendCell{
+    _combatRecommendCell = [[MC_CombatRecommendCell alloc]initWithTableView:self.tableView];
+    _combatRecommendCell.pushDeleagte = self;
+    return _combatRecommendCell;
+}
+/**
+ *  TeacherRecommended
+ */
+-(MC_TeacherRecommendedCell *)teacherRecommendedCell{
+    _teacherRecommendedCell= [[MC_TeacherRecommendedCell alloc]initWithTableView:self.tableView];
+    _teacherRecommendedCell.pushDeleagte = self;
+    return _teacherRecommendedCell;
+}
+/**
+ *  GuessYouLike
+ */
+-(MC_GuessYouLikeCell *)guessYouLikeCell{
+    _guessYouLikeCell = [[MC_GuessYouLikeCell alloc]initWithTableView:self.tableView];
+    _guessYouLikeCell.pushDeleagte = self;
+    return _guessYouLikeCell;
 }
 -(UIView *)emptyHeaderView{
     _emptyHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, RESIZE_UI(60))];

@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="349"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a09-q8-ePh">
@@ -43,14 +43,14 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8v-hT-1DJ">
-                        <rect key="frame" x="0.0" y="165" width="375" height="164.5"/>
+                        <rect key="frame" x="0.0" y="165" width="375" height="165"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmx-eO-3ui" customClass="MC_SubView">
-                                <rect key="frame" x="15" y="0.0" width="167.5" height="154.5"/>
+                                <rect key="frame" x="15" y="0.0" width="167.5" height="155"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-dX-Cw5" customClass="MC_SubView">
-                                <rect key="frame" x="192.5" y="0.0" width="167.5" height="154.5"/>
+                                <rect key="frame" x="192.5" y="0.0" width="167.5" height="155"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -84,7 +84,7 @@
                 <outlet property="three" destination="bmx-eO-3ui" id="M7Y-Br-hJT"/>
                 <outlet property="two" destination="tbx-rL-Njo" id="RYG-WR-Dtr"/>
             </connections>
-            <point key="canvasLocation" x="-819" y="-67"/>
+            <point key="canvasLocation" x="-991" y="-54"/>
         </tableViewCell>
     </objects>
 </document>

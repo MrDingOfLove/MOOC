@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MC_MineHeaderCell" id="KGk-i7-Jjw" customClass="MC_MineHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsS-Kx-Gbo" customClass="MC_MineHeaderCellView">
+                        <rect key="frame" x="0.0" y="0.0" width="94" height="99.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-FH-L7E" customClass="MC_MineHeaderCellView">
+                        <rect key="frame" x="94" y="0.0" width="93.5" height="99.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwQ-mw-9Yl" customClass="MC_MineHeaderCellView">
+                        <rect key="frame" x="187.5" y="0.0" width="94" height="99.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRt-fo-lIu" customClass="MC_MineHeaderCellView">
+                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="99.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qO9-FH-L7E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Bsk-LJ-onZ"/>
+                    <constraint firstItem="qO9-FH-L7E" firstAttribute="width" secondItem="WsS-Kx-Gbo" secondAttribute="width" id="DgX-ar-qmw"/>
+                    <constraint firstAttribute="trailing" secondItem="dRt-fo-lIu" secondAttribute="trailing" id="H7v-kr-15A"/>
+                    <constraint firstItem="MwQ-mw-9Yl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IQo-Rc-Tk8"/>
+                    <constraint firstItem="dRt-fo-lIu" firstAttribute="leading" secondItem="MwQ-mw-9Yl" secondAttribute="trailing" id="O4v-t8-hgr"/>
+                    <constraint firstAttribute="bottom" secondItem="qO9-FH-L7E" secondAttribute="bottom" id="Pea-sB-poz"/>
+                    <constraint firstItem="dRt-fo-lIu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R9x-Id-0kY"/>
+                    <constraint firstItem="MwQ-mw-9Yl" firstAttribute="leading" secondItem="qO9-FH-L7E" secondAttribute="trailing" id="Tgy-lD-gR6"/>
+                    <constraint firstItem="WsS-Kx-Gbo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UMS-Hj-o4M"/>
+                    <constraint firstAttribute="bottom" secondItem="dRt-fo-lIu" secondAttribute="bottom" id="Z1J-fL-spA"/>
+                    <constraint firstItem="dRt-fo-lIu" firstAttribute="width" secondItem="WsS-Kx-Gbo" secondAttribute="width" id="bjf-zR-bcz"/>
+                    <constraint firstAttribute="bottom" secondItem="MwQ-mw-9Yl" secondAttribute="bottom" id="e22-T1-o0v"/>
+                    <constraint firstItem="WsS-Kx-Gbo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hib-Ad-Ma2"/>
+                    <constraint firstAttribute="bottom" secondItem="WsS-Kx-Gbo" secondAttribute="bottom" id="t0d-oa-l5m"/>
+                    <constraint firstItem="MwQ-mw-9Yl" firstAttribute="width" secondItem="WsS-Kx-Gbo" secondAttribute="width" id="x7s-FH-73n"/>
+                    <constraint firstItem="qO9-FH-L7E" firstAttribute="leading" secondItem="WsS-Kx-Gbo" secondAttribute="trailing" id="yTa-Pf-RGq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="four" destination="dRt-fo-lIu" id="GBi-Wh-N1E"/>
+                <outlet property="one" destination="WsS-Kx-Gbo" id="91z-LO-EcU"/>
+                <outlet property="three" destination="MwQ-mw-9Yl" id="A0G-nN-WId"/>
+                <outlet property="two" destination="qO9-FH-L7E" id="JBB-f2-EhP"/>
+            </connections>
+            <point key="canvasLocation" x="-1223" y="-12"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -38,17 +38,15 @@
 -(UIImageView *)imageView{
     if (!_imageView){
         _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0,(self.height-RESIZE_UI(18))/2.0, RESIZE_UI(18), RESIZE_UI(18))];
-//        _imageView.image = [UIImage imageNamed:@"recommend"];
-        _imageView.backgroundColor = [UIColor whiteColor];
     }
     return _imageView;
 }
 -(UILabel *)titleLabel{
     if (!_titleLabel){
         _titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(self.width/3.0, 0, self.width/3.0, self.height)];
-//        _titleLabel.text = NSLocalizedStringFromTable(@"CourseRecommendedTitle", @"internationalization", nil);
         _titleLabel.textColor = [UIColor colorWithHexString:@"#31373d"];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.font = [UIFont systemFontOfSize:RESIZE_UI(15)];
     }
     return _titleLabel;
 }

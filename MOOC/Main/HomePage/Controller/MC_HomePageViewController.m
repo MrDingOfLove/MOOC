@@ -31,7 +31,7 @@
 #pragma mark UITableViewDataSource
 //numberOfSections
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;{
-    return 7;
+    return 8;
 }
 //numberOfRowsInSection
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -70,7 +70,7 @@
 -(UITableView *)mainContent_TableView{
     if (!_mainContent_TableView) {
         _mainContent_TableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
-        _mainContent_TableView.backgroundColor  = [UIColor whiteColor];
+        _mainContent_TableView.backgroundColor = [UIColor whiteColor];
         _mainContent_TableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _mainContent_TableView;

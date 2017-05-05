@@ -34,15 +34,35 @@
     NSLog(@"training");
 }
 - (IBAction)path:(UIButton *)sender {
+    UIViewController * viewController = [[UIViewController alloc]init];
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
+        [self.pushDeleagte pushToViewController:viewController];
+    }
     NSLog(@"path");
 }
 - (IBAction)question:(UIButton *)sender {
+    UIViewController * viewController = [[UIViewController alloc]init];
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
+        [self.pushDeleagte pushToViewController:viewController];
+    }
     NSLog(@"question");
 }
 - (IBAction)note:(UIButton *)sender {
+    UIViewController * viewController = [[UIViewController alloc]init];
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
+        [self.pushDeleagte pushToViewController:viewController];
+    }
     NSLog(@"note");
 }
 - (IBAction)find:(UIButton *)sender {
+    UIViewController * viewController = [[UIViewController alloc]init];
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
+        [self.pushDeleagte pushToViewController:viewController];
+    }
     NSLog(@"find");
 }
 

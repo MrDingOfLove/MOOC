@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MC_GuessYouLikeCell" id="KGk-i7-Jjw" customClass="MC_GuessYouLikeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLp-0I-iof" customClass="MC_SubView">
+                        <rect key="frame" x="10" y="0.0" width="173" height="155"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbK-q8-Df0" customClass="MC_SubView">
+                        <rect key="frame" x="193" y="0.0" width="172" height="155"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vbK-q8-Df0" firstAttribute="leading" secondItem="kLp-0I-iof" secondAttribute="trailing" constant="10" id="44f-Z1-1DW"/>
+                    <constraint firstAttribute="bottom" secondItem="vbK-q8-Df0" secondAttribute="bottom" constant="10" id="A45-FN-5Si"/>
+                    <constraint firstAttribute="trailing" secondItem="vbK-q8-Df0" secondAttribute="trailing" constant="10" id="PYx-vW-UAG"/>
+                    <constraint firstItem="kLp-0I-iof" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UCa-iF-7QV"/>
+                    <constraint firstItem="kLp-0I-iof" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ZZh-KN-MuS"/>
+                    <constraint firstItem="vbK-q8-Df0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Zwj-sC-gCg"/>
+                    <constraint firstItem="vbK-q8-Df0" firstAttribute="width" secondItem="kLp-0I-iof" secondAttribute="width" id="k4k-D4-J7L"/>
+                    <constraint firstAttribute="bottom" secondItem="kLp-0I-iof" secondAttribute="bottom" constant="10" id="vgJ-0Z-Kuq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="one" destination="kLp-0I-iof" id="C9A-Sa-EaT"/>
+                <outlet property="two" destination="vbK-q8-Df0" id="xAW-Cm-KTj"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="-52"/>
+        </tableViewCell>
+    </objects>
+</document>

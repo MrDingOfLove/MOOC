@@ -24,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createChildController];
+    self.selectedIndex = 3;
 }
 /**
  *  创建四个子控制器

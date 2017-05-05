@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MC_BaseCell.h"
 #import "MC_PushToViewControllerProtocol.h"
 
-@interface MC_CourseRecommendCell : UITableViewCell
-@property (nonatomic,strong) NSObject * model;
-@property (nonatomic,weak) id<MC_PushToViewControllerProtocol> pushDeleagte;
--(instancetype)initWithTableView:(UITableView*)tableView;
+@interface MC_CourseRecommendCell : MC_BaseCell
+
 @end

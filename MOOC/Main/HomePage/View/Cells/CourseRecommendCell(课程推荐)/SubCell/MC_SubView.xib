@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MC_SubView">
             <connections>
                 <outlet property="categoryLabel" destination="aMy-hc-LGm" id="9et-g9-7WV"/>
+                <outlet property="priceLabel" destination="e0V-8A-Lqe" id="3wH-4Q-Edp"/>
                 <outlet property="studyNumLabel" destination="yxk-99-ZeX" id="WRB-Z2-pA3"/>
                 <outlet property="synopsisLabel" destination="pey-EB-Aif" id="E7i-jx-jAy"/>
                 <outlet property="titleImage" destination="6zk-Zn-ia0" id="LfP-Hc-Vje"/>
@@ -39,7 +40,7 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7m-df-HRG">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7m-df-HRG">
                     <rect key="frame" x="10" y="50" width="228" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
@@ -52,9 +53,15 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxk-99-ZeX">
-                    <rect key="frame" x="10" y="187" width="228" height="0.0"/>
+                    <rect key="frame" x="10" y="187" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0V-8A-Lqe">
+                    <rect key="frame" x="228" y="187" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-We-MGA">
@@ -77,8 +84,9 @@
                 <constraint firstItem="K7m-df-HRG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Lg5-Dd-e3R"/>
                 <constraint firstItem="yxk-99-ZeX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Mlm-X7-mtC"/>
                 <constraint firstItem="6zk-Zn-ia0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Mvp-CN-kSj"/>
+                <constraint firstAttribute="bottom" secondItem="e0V-8A-Lqe" secondAttribute="bottom" constant="10" id="PPu-gp-cVj"/>
                 <constraint firstAttribute="trailing" secondItem="mjB-We-MGA" secondAttribute="trailing" id="QEQ-Ms-y1m"/>
-                <constraint firstAttribute="trailing" secondItem="yxk-99-ZeX" secondAttribute="trailing" id="Ys1-5l-nWC"/>
+                <constraint firstAttribute="trailing" secondItem="e0V-8A-Lqe" secondAttribute="trailing" constant="10" id="Tc3-Nv-uJo"/>
                 <constraint firstAttribute="bottom" secondItem="mjB-We-MGA" secondAttribute="bottom" id="cCi-9r-Ywq"/>
                 <constraint firstItem="mjB-We-MGA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eRM-R0-clp"/>
                 <constraint firstItem="aMy-hc-LGm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="gro-qU-9UZ"/>
@@ -93,7 +101,7 @@
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
             </userDefinedRuntimeAttributes>
-            <point key="canvasLocation" x="-309" y="33"/>
+            <point key="canvasLocation" x="-69" y="27"/>
         </view>
     </objects>
 </document>
