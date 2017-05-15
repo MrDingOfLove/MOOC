@@ -11,4 +11,5 @@
 @interface MC_DetialController : UIViewController
 
 -(instancetype)initWithData:(NSObject *)data;
+
 @end

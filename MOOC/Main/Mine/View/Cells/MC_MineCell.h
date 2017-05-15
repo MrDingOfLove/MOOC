@@ -9,5 +9,6 @@
 #import "MC_BaseCell.h"
 
 @interface MC_MineCell : MC_BaseCell
+@property (strong, nonatomic) IBOutlet UILabel *title;
 
 @end

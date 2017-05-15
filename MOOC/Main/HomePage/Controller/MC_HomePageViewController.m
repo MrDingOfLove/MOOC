@@ -25,8 +25,6 @@
 }
 -(void)initForTableView{
     [self.view addSubview:self.mainContent_TableView];
-    self.mainContent_TableView.delegate = self;
-    self.mainContent_TableView.dataSource = self;
 }
 #pragma mark UITableViewDataSource
 //numberOfSections
@@ -72,6 +70,8 @@
         _mainContent_TableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
         _mainContent_TableView.backgroundColor = [UIColor whiteColor];
         _mainContent_TableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _mainContent_TableView.delegate = self;
+        _mainContent_TableView.dataSource = self;
     }
     return _mainContent_TableView;
 }

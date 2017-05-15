@@ -48,6 +48,7 @@
         _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0,self.width , self.height)];
         _scrollView.delegate = self;
         _scrollView.pagingEnabled = YES;
+        //设置大小为屏幕宽度*图片的个数
         _scrollView.contentSize = CGSizeMake(self.width*5, self.height);
         _scrollView.bounces = NO;
         _scrollView.showsHorizontalScrollIndicator=NO;

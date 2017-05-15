@@ -7,6 +7,7 @@
 //
 #import "MC_SubView.h"
 #import "MC_CombatRecommendCell.h"
+#import "MC_BuyMenuController.h"
 @interface MC_CombatRecommendCell()
 @property (strong, nonatomic) IBOutlet MC_SubView *one;
 @property (strong, nonatomic) IBOutlet MC_SubView *two;
@@ -40,27 +41,30 @@
     [self.five setInformationWithCategoryimageName:@"" category:@"大数据 JavaScript" title:@"Echars3.0入门基础与实战" synopsis:@"Echars3.0入门视频教程带你领略高逼格数据可..." studyNum:@"8742人学习" price:@"¥199.00"];
     [self.six setInformationWithCategoryimageName:@"" category:@"大数据 JavaScript" title:@"Echars3.0入门基础与实战" synopsis:@"Echars3.0入门视频教程带你领略高逼格数据可..." studyNum:@"8742人学习" price:@"¥199.00"];
 }
--(void)initForPushBlock{
-    UIViewController * v =[[UIViewController alloc]init];
+-(MC_BuyMenuController *)creat{
+    MC_BuyMenuController * v =[[MC_BuyMenuController alloc]initWithData:nil];
     v.view.backgroundColor = [UIColor whiteColor];
+    return v;
+}
+-(void)initForPushBlock{
     __weak typeof(self) weakSelf = self;
     self.one.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        [weakSelf.pushDeleagte pushToViewController:[weakSelf creat]];
     };
     self.two.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        [weakSelf.pushDeleagte pushToViewController:[weakSelf creat]];
     };
     self.three.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        [weakSelf.pushDeleagte pushToViewController:[weakSelf creat]];
     };
     self.four.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        [weakSelf.pushDeleagte pushToViewController:[weakSelf creat]];
     };
     self.five.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        [weakSelf.pushDeleagte pushToViewController:[weakSelf creat]];
     };
     self.six.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        [weakSelf.pushDeleagte pushToViewController:[weakSelf creat]];
     };
 }
 

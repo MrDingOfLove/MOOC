@@ -24,18 +24,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createChildController];
-    self.selectedIndex = 3;
+    self.selectedIndex = 0;
 }
 /**
  *  创建四个子控制器
  */
 -(void)createChildController{
-    [self addSubItemWithVieeController:[[MC_HomePageViewController alloc]init] tabBarTitle:@"首页" imageName:@"homePage" selectedImageName:@"homePage_selected"];
-    [self addSubItemWithVieeController:[[MC_CourseViewController alloc]init] tabBarTitle:@"课程" imageName:@"course" selectedImageName:@"course_selected"];
-    [self addSubItemWithVieeController:[[MC_DownloadViewController alloc]init] tabBarTitle:@"下载" imageName:@"download" selectedImageName:@"download_selected"];
-    [self addSubItemWithVieeController:[[MC_MineViewController alloc]init] tabBarTitle:@"我的" imageName:@"mine" selectedImageName:@"mine_selected"];
+    [self addSubItemWithViewController:[[MC_HomePageViewController alloc]init] tabBarTitle:@"首页" imageName:@"homePage" selectedImageName:@"homePage_selected"];
+    [self addSubItemWithViewController:[[MC_CourseViewController alloc]init] tabBarTitle:@"课程" imageName:@"course" selectedImageName:@"course_selected"];
+    [self addSubItemWithViewController:[[MC_DownloadViewController alloc]init] tabBarTitle:@"下载" imageName:@"download" selectedImageName:@"download_selected"];
+    [self addSubItemWithViewController:[[MC_MineViewController alloc]init] tabBarTitle:@"我的" imageName:@"mine" selectedImageName:@"mine_selected"];
 }
--(void)addSubItemWithVieeController:(UIViewController *)viewController tabBarTitle:(NSString *)tabBarTitle imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName{
+-(void)addSubItemWithViewController:(UIViewController *)viewController tabBarTitle:(NSString *)tabBarTitle imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName{
     UINavigationController * navigationController = [[UINavigationController alloc]initWithRootViewController:viewController];
     navigationController.tabBarItem.title = tabBarTitle;
     navigationController.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

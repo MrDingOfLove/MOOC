@@ -8,6 +8,7 @@
 
 #import "MC_DetialController.h"
 #import "MC_CourseDetialCell.h"
+#import "MC_BuyMenuController.h"
 
 @interface MC_DetialController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSObject * data;
@@ -52,7 +53,10 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)   indexPath{
     return RESIZE_UI(100);
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    MC_BuyMenuController * buyMenuController = [[MC_BuyMenuController alloc]initWithData:nil];
+    [self.navigationController pushViewController:buyMenuController animated:YES];
+}
 #pragma mark getter&setter
 -(UITableView *)tableView{
     if (!_tableView){
@@ -64,4 +68,5 @@
     }
     return _tableView;
 }
+
 @end

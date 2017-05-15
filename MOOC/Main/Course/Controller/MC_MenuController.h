@@ -10,4 +10,5 @@
 
 @interface MC_MenuController : WMPageController
 -(instancetype)initWithData:(NSObject *)data;
+
 @end

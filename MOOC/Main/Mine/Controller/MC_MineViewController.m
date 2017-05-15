@@ -11,8 +11,12 @@
 #import "MC_MineHeaderCell.h"
 #import "MC_MineCell.h"
 #import "MC_PushToViewControllerProtocol.h"
-@interface MC_MineViewController ()<UITableViewDelegate,UITableViewDataSource,MC_PushToViewControllerProtocol>
+#import "StartUp.h"
+
+
+@interface MC_MineViewController ()<UITableViewDelegate,UITableViewDataSource,MC_PushToViewControllerProtocol,MC_LoginDelegate>
 @property (nonatomic,strong) UITableView * tableView;
+@property (nonatomic,strong) UIImageView * header;
 @end
 
 @implementation MC_MineViewController
@@ -52,6 +56,17 @@
             break;
         case 1:{
             MC_MineCell * cell = [[MC_MineCell alloc]initWithTableView:tableView];
+            if (indexPath.row == 0){
+                cell.title.text = @"历史记录";
+            }else if (indexPath.row == 1){
+                cell.title.text = @"我的路径";
+            }else if (indexPath.row == 2){
+                cell.title.text = @"我的课表";
+            }else if (indexPath.row == 3){
+                cell.title.text = @"我的订单";
+            }else if (indexPath.row == 4){
+                cell.title.text = @"优惠券";
+            }
             cell.pushDeleagte = self;
             return cell;
         }
@@ -59,6 +74,11 @@
         case 2:{
             MC_MineCell * cell = [[MC_MineCell alloc]initWithTableView:tableView];
             cell.pushDeleagte = self;
+            if (indexPath.row == 0){
+                cell.title.text = @"设置";
+            }else if (indexPath.row == 1){
+                cell.title.text = @"退出登录";
+            }
             return cell;
         }
             break;
@@ -82,10 +102,20 @@
 //viewForHeader
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section == 0) {
-        return [[UIView alloc]init];
+        [self header];
+        self.header.image = [UIImage imageNamed:@"login_out.jpg"];
+        return self.header;
     }else{
         return [[UIView alloc]init];
     }
+}
+-(void)login:(UIButton *)btn{
+    StartUp * loginView = [[StartUp alloc]init];
+    loginView.delegate = self;
+    [self presentViewController:loginView animated:YES completion:nil];
+}
+-(void)changeHeader{
+    self.header.image =[UIImage imageNamed:@"mine_header.jpg"];
 }
 //heightForFooter
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
@@ -97,6 +127,13 @@
         return RESIZE_UI(100);
     }
     return RESIZE_UI(50);
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 2 && indexPath.row == 1) {
+        self.header.image = [UIImage imageNamed:@"login_out.jpg"];
+    }else{
+        [self createAlert:@"暂未完善！" message:nil];
+    }
 }
 #pragma mark MC_PushToViewControllerProtocol
 -(void)pushToViewController:(UIViewController *)viewController{
@@ -113,4 +150,22 @@
     }
     return _tableView;
 }
+-(UIImageView *)header{
+    if (!_header){
+        _header = [[UIImageView alloc]init];
+        _header.userInteractionEnabled = YES;
+        UIButton * login = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH-RESIZE_UI(80))/2, RESIZE_UI(25), RESIZE_UI(80), RESIZE_UI(100))];
+        [login addTarget:self action:@selector(login:) forControlEvents:UIControlEventTouchUpInside];
+        [_header addSubview:login];
+    }
+    return _header;
+}
+-(void)createAlert:(NSString *)string message:(NSString *)message{
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:string message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction * action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:nil];
+    [alert addAction:action];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 @end

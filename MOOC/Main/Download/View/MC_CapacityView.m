@@ -25,10 +25,14 @@
 -(void)initForView{
     [self addSubview:self.capacityLabel];
     [self addSubview:self.progressView];
+    //获取系统沙盒路径
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask , YES)objectAtIndex:0];
+    //创建文件管理者对象
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSDictionary *fileSysAttributes = [fileManager attributesOfFileSystemForPath:path error:nil];
+    //剩余的空间
     NSNumber *freeSpace = [fileSysAttributes objectForKey:NSFileSystemFreeSize];
+    //总的内存空间
     NSNumber *totalSpace = [fileSysAttributes objectForKey:NSFileSystemSize];
     double free = ([freeSpace doubleValue])/1024.0/1024.0/1024.0;
     double total = ([totalSpace doubleValue])/1024.0/1024.0/1024.0;

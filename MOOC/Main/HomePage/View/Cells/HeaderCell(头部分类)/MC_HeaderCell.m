@@ -7,6 +7,7 @@
 //
 
 #import "MC_HeaderCell.h"
+#import "MC_HeaderDetialController.h"
 
 @implementation MC_HeaderCell
 - (instancetype)initWithTableView:(UITableView *)tableView
@@ -26,40 +27,45 @@
     // Initialization code
 }
 - (IBAction)training:(UIButton *)sender {
-    UIViewController * viewController = [[UIViewController alloc]init];
+    MC_HeaderDetialController * viewController = [[MC_HeaderDetialController alloc]init];
     viewController.view.backgroundColor = [UIColor whiteColor];
+    viewController.navigationItem.title = @"实战";
     if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
         [self.pushDeleagte pushToViewController:viewController];
     }
     NSLog(@"training");
 }
 - (IBAction)path:(UIButton *)sender {
-    UIViewController * viewController = [[UIViewController alloc]init];
+    MC_HeaderDetialController * viewController = [[MC_HeaderDetialController alloc]init];
     viewController.view.backgroundColor = [UIColor whiteColor];
+    viewController.navigationItem.title = @"路径";
     if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
         [self.pushDeleagte pushToViewController:viewController];
     }
     NSLog(@"path");
 }
 - (IBAction)question:(UIButton *)sender {
-    UIViewController * viewController = [[UIViewController alloc]init];
+    MC_HeaderDetialController * viewController = [[MC_HeaderDetialController alloc]init];
     viewController.view.backgroundColor = [UIColor whiteColor];
+    viewController.navigationItem.title = @"猿问";
     if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
         [self.pushDeleagte pushToViewController:viewController];
     }
     NSLog(@"question");
 }
 - (IBAction)note:(UIButton *)sender {
-    UIViewController * viewController = [[UIViewController alloc]init];
+    MC_HeaderDetialController * viewController = [[MC_HeaderDetialController alloc]init];
     viewController.view.backgroundColor = [UIColor whiteColor];
+    viewController.navigationItem.title = @"手记";
     if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
         [self.pushDeleagte pushToViewController:viewController];
     }
     NSLog(@"note");
 }
 - (IBAction)find:(UIButton *)sender {
-    UIViewController * viewController = [[UIViewController alloc]init];
+    MC_HeaderDetialController * viewController = [[MC_HeaderDetialController alloc]init];
     viewController.view.backgroundColor = [UIColor whiteColor];
+    viewController.navigationItem.title = @"发现";
     if ([self.pushDeleagte respondsToSelector:@selector(pushToViewController:)]) {
         [self.pushDeleagte pushToViewController:viewController];
     }

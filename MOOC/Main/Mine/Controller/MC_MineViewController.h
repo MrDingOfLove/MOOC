@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@protocol MC_LoginDelegate <NSObject>
+-(void)changeHeader;
+@end
 @interface MC_MineViewController : UIViewController
 
 @end
