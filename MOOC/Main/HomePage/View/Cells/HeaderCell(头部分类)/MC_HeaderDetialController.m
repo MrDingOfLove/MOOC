@@ -45,6 +45,7 @@
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     return self.headerView;
 }
+
 -(void)change:(UIButton*)btn{
     //修改上一个点击按钮的属性
     [self.currentBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
@@ -57,6 +58,7 @@
     //刷新tableView的数据源
     [self.tableView reloadData];
 }
+
 ////heightForFooter
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return RESIZE_UI(0.1);

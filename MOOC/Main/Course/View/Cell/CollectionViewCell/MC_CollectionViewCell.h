@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MC_CollectionViewCell : UICollectionViewCell
-
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @end

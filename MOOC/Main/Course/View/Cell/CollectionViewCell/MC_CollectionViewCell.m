@@ -8,8 +8,8 @@
 
 #import "MC_CollectionViewCell.h"
 @interface MC_CollectionViewCell()
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+
+
 
 @end
 

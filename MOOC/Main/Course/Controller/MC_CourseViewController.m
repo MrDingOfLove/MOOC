@@ -11,6 +11,7 @@
 #import "MC_MenuController.h"
 
 @interface MC_CourseViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@property (nonatomic,strong) NSArray * titleArray;
 @property (nonatomic,strong) UICollectionView * collectionView;
 @property (nonatomic,strong) UICollectionViewFlowLayout * collectionViewFlowLayout;
 @end
@@ -32,6 +33,9 @@
     NSString * identifier = @"MC_CollectionViewCell";
     UINib *cellNib=[UINib nibWithNibName:identifier bundle:nil];
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:identifier];
+    /**
+     *  注册头视图
+     */
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
 }
 - (void)didReceiveMemoryWarning {
@@ -56,7 +60,7 @@
     label.textColor = [UIColor grayColor];
     label.font = [UIFont systemFontOfSize:RESIZE_UI(13)];
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        label.text=@"前端开发";
+        label.text=@"开发语言";
     }
     [header addSubview:label];
     return header;
@@ -72,6 +76,8 @@
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     MC_CollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"MC_CollectionViewCell" forIndexPath:indexPath];
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg",indexPath.row+1]];
+    cell.titleLabel.text = self.titleArray[indexPath.row];
     return cell;
 }
 //cell的点击事件
@@ -101,5 +107,10 @@
     }
     return _collectionViewFlowLayout;
 }
-
+-(NSArray *)titleArray{
+    if (!_titleArray){
+        _titleArray = [[NSArray alloc]initWithObjects:@"HTML/CSS",@"JavaScript",@"jQuery",@"Node.js",@"HTML5",@"Augular Js",@"PHP",@"Java",@"Python",@"C", nil];
+    }
+    return _titleArray;
+}
 @end

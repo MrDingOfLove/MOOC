@@ -11,14 +11,16 @@
 @interface MC_ServiceForHeaderViewAndCell : NSObject
 -(instancetype)initWithData:(NSObject *)data;
 @property (nonatomic,strong) void (^pushBlock) (UIViewController * ViewController);
-//Height
+
+//为每个标题设置高度
 -(CGFloat)heightOfSection:(NSInteger)section;
-//View
+//为每个标题返回相对应的标题视图
 -(UIView *)viewOfSection:(NSInteger)section;
-//Cell
+//为每个展示模块返回不同风格的Cell
 -(UITableViewCell *)cellForTableView:(UITableView *)tableView sectionAtIndexPath:(NSIndexPath *)indexPath;
-//HeightForrow
+//每个模块展示区域的高度
 -(CGFloat)heightForRowAtIndexPath:(NSIndexPath *)indexPath;
-//numberOfRowsInSection
+//每个模块的Cell个数
 -(NSInteger)numberOfRowsInSection:(NSInteger)section;
+
 @end

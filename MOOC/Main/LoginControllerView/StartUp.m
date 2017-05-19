@@ -30,7 +30,7 @@
 //创建主视图
 -(void)createStartImageView{
     _imageView = [[UIImageView alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    _imageView.image = [UIImage imageNamed:@"Login"];
+    _imageView.image = [UIImage imageNamed:@"start_up"];
     _imageView.userInteractionEnabled = YES;
     [self.view addSubview:_imageView];
 }
@@ -72,7 +72,7 @@
     LoginView * loginView = [[LoginView alloc]initWithStartUp:self];
     loginView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     RegisterView * registerView = [[RegisterView alloc]init];
-    registerView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    registerView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     if (button.tag == 100) {
         [self presentViewController:loginView animated:YES completion:nil];
     }else{

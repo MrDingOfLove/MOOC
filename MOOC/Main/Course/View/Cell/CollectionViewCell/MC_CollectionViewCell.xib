@@ -41,10 +41,10 @@
             </constraints>
             <size key="customSize" width="218" height="110"/>
             <connections>
-                <outlet property="imageView" destination="sBJ-xz-EwA" id="eQZ-zE-Gz2"/>
+                <outlet property="imageView" destination="sBJ-xz-EwA" id="zlz-FW-gyK"/>
                 <outlet property="titleLabel" destination="E8W-Vb-UiO" id="Pe3-Sq-Yiw"/>
             </connections>
-            <point key="canvasLocation" x="-324" y="-88"/>
+            <point key="canvasLocation" x="-64" y="-72"/>
         </collectionViewCell>
     </objects>
 </document>
