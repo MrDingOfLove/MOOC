@@ -66,6 +66,6 @@
     //视频播放暂停
     [self.playerView.player pause];
     //视频播放对象清空
-    self.playerView = nil;
+//    self.playerView = nil;
 }
 @end

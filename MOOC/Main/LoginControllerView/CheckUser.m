@@ -51,6 +51,7 @@
 //将path下的内容读到myUserDic中
 -(void)fileContentToMyUserDic{
     NSString * userPath = [[NSBundle mainBundle]pathForResource:@"Users" ofType:@"txt"];
+    NSLog(@"");
     self.contentFromFile = [NSString stringWithContentsOfFile:userPath encoding:NSUTF8StringEncoding error:nil];
 //        NSLog(@"%@",self.contentFromFile);
     NSArray<NSString*> * content = [self.contentFromFile componentsSeparatedByString:@"\n"];

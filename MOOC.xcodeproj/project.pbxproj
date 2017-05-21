@@ -66,6 +66,7 @@
 		04F183361EC09E8B00751765 /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F183341EC09E8B00751765 /* PlayerView.xib */; };
 		04F183391EC0AD6200751765 /* MC_HeaderDetialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F183381EC0AD6200751765 /* MC_HeaderDetialController.m */; };
 		BA10E376A5C08237B6B33A15 /* libPods-MOOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D994A27451854C008FA14C58 /* libPods-MOOC.a */; };
+		EE5743D81ECF6518005FDC00 /* MC_LoginStatusControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5743D71ECF6518005FDC00 /* MC_LoginStatusControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,6 +176,8 @@
 		350FE540159103E38D109308 /* Pods-MOOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOOC/Pods-MOOC.debug.xcconfig"; sourceTree = "<group>"; };
 		9852E0654E0CE718799F9128 /* Pods-MOOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOOC/Pods-MOOC.release.xcconfig"; sourceTree = "<group>"; };
 		D994A27451854C008FA14C58 /* libPods-MOOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MOOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5743D61ECF6518005FDC00 /* MC_LoginStatusControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC_LoginStatusControl.h; sourceTree = "<group>"; };
+		EE5743D71ECF6518005FDC00 /* MC_LoginStatusControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC_LoginStatusControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 				040A0A3D1EC1B18100727313 /* RegisterView.m */,
 				040A0A441EC1B1C800727313 /* CheckUser.h */,
 				040A0A451EC1B1C800727313 /* CheckUser.m */,
+				EE5743D61ECF6518005FDC00 /* MC_LoginStatusControl.h */,
+				EE5743D71ECF6518005FDC00 /* MC_LoginStatusControl.m */,
 			);
 			path = LoginControllerView;
 			sourceTree = "<group>";
@@ -716,7 +721,7 @@
 				TargetAttributes = {
 					0474F9371EA0A197002395EE = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9X9CEHSDH3;
+						DevelopmentTeam = 429676A9MD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -843,6 +848,7 @@
 				040C105B1EBAF98B00E62BA1 /* MC_CourseDetialCell.m in Sources */,
 				0451FAEC1EB5E89C007F72BA /* MC_SubView.m in Sources */,
 				040A0A461EC1B1C800727313 /* CheckUser.m in Sources */,
+				EE5743D81ECF6518005FDC00 /* MC_LoginStatusControl.m in Sources */,
 				04E938581EAF5F80008D6920 /* MC_MineViewController.m in Sources */,
 				04F183301EC09DE500751765 /* MC_VideoplayController.m in Sources */,
 				0451FAE81EB5E89C007F72BA /* MC_CareerPathCell.m in Sources */,
@@ -939,7 +945,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -981,7 +987,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -994,13 +1000,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9X9CEHSDH3;
+				DEVELOPMENT_TEAM = 429676A9MD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MOOC/Main/Other/MOOCHeader.pch";
 				INFOPLIST_FILE = MOOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dingyahao.www.MOOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.520it.www.ding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.1;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1011,13 +1018,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9X9CEHSDH3;
+				DEVELOPMENT_TEAM = 429676A9MD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MOOC/Main/Other/MOOCHeader.pch";
 				INFOPLIST_FILE = MOOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dingyahao.www.MOOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.520it.www.ding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.1;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

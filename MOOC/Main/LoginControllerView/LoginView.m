@@ -9,6 +9,7 @@
 #import "LoginView.h"
 #import "CheckUser.h"
 #import "StartUp.h"
+#import "MC_LoginStatusControl.h"
 @interface LoginView ()
 @property (nonatomic,strong) StartUp * startUp;
 @end
@@ -138,6 +139,8 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 -(void)toMainScreenWithName:(NSString *)name passWord:(NSString *)password{
+    MC_LoginStatusControl * loginStatus = [MC_LoginStatusControl shareInstance];
+    loginStatus.isLogin = YES;
     [self dismissViewControllerAnimated:YES completion:^{
         [self.startUp dismissViewControllerAnimated:YES completion:nil];
     }];

@@ -55,13 +55,13 @@
         [self createAlert:@"密码不能为空"message:nil];
     }else{
         CheckUser * check = [[CheckUser alloc]init];
-        
         [check check];
         BOOL result = check.delagate1(textField.text);
         if (result == 1) {
             [self createAlert:@"用户名已存在!"message:@"请重新输入"];
         }else{
-            check.delagate0(textField.text,textField0.text);
+            check.delagate2(textField.text,textField0.text);
+            [check contentToFile];
             [self createAlert:@"已注册!请切换到登录"message:nil];
             textField.text = @"";
             textField0.text = @"";

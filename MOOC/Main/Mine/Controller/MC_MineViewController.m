@@ -12,6 +12,7 @@
 #import "MC_MineCell.h"
 #import "MC_PushToViewControllerProtocol.h"
 #import "StartUp.h"
+#import "MC_LoginStatusControl.h"
 
 
 @interface MC_MineViewController ()<UITableViewDelegate,UITableViewDataSource,MC_PushToViewControllerProtocol,MC_LoginDelegate>
@@ -110,9 +111,12 @@
     }
 }
 -(void)login:(UIButton *)btn{
-    StartUp * loginView = [[StartUp alloc]init];
-    loginView.delegate = self;
-    [self presentViewController:loginView animated:YES completion:nil];
+    MC_LoginStatusControl * loginStatus = [MC_LoginStatusControl shareInstance];
+    if (!loginStatus.isLogin) {
+        StartUp * loginView = [[StartUp alloc]init];
+        loginView.delegate = self;
+        [self presentViewController:loginView animated:YES completion:nil];
+    }
 }
 -(void)changeHeader{
     self.header.image =[UIImage imageNamed:@"mine_header.jpg"];
@@ -129,15 +133,43 @@
     return RESIZE_UI(50);
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+     MC_LoginStatusControl * loginStatus = [MC_LoginStatusControl shareInstance];
+    if (indexPath.section == 1) {
+        if (loginStatus.isLogin ==YES) {
+            UIViewController * viewController = [[UIViewController alloc]init];
+            viewController.view.backgroundColor = [UIColor whiteColor];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }else{
+            [self login:nil];
+        }
+    }
     if (indexPath.section == 2 && indexPath.row == 1) {
-        self.header.image = [UIImage imageNamed:@"login_out.jpg"];
-    }else{
-        [self createAlert:@"暂未完善！" message:nil];
+        if (loginStatus.isLogin == YES) {
+            UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"是否要退出登录" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction * alertAction_ture = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                loginStatus.isLogin = NO;
+                self.header.image = [UIImage imageNamed:@"login_out.jpg"];
+            }];
+            
+            UIAlertAction * alertAction_cancle = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                
+            }];
+            [alertController addAction:alertAction_ture];
+            [alertController addAction:alertAction_cancle];
+            [self presentViewController:alertController animated:YES completion:nil];
+        }else{
+            [self createAlert:@"用户没有登录" message:@""];
+        }
+    }else if (indexPath.section ==2 &&indexPath.row == 0){
+        [self createAlert:@"尚未完善" message:@""];
     }
 }
 #pragma mark MC_PushToViewControllerProtocol
 -(void)pushToViewController:(UIViewController *)viewController{
     [self.navigationController pushViewController:viewController animated:YES];
+}
+-(void)presentToViewController:(UIViewController *)viewController{
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 #pragma mark setter&getter
 -(UITableView *)tableView{
@@ -164,7 +196,6 @@
     UIAlertController * alert = [UIAlertController alertControllerWithTitle:string message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction * action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:nil];
     [alert addAction:action];
-    
     [self presentViewController:alert animated:YES completion:nil];
 }
 

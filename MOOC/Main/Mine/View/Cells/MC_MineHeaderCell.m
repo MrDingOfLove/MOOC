@@ -8,6 +8,8 @@
 
 #import "MC_MineHeaderCell.h"
 #import "MC_MineHeaderCellView.h"
+#import "MC_LoginStatusControl.h"
+#import "StartUp.h"
 @interface MC_MineHeaderCell()
 @property (strong, nonatomic) IBOutlet MC_MineHeaderCellView *one;
 @property (strong, nonatomic) IBOutlet MC_MineHeaderCellView *two;
@@ -38,18 +40,37 @@
 -(void)initForPushBlock{
     UIViewController * v =[[UIViewController alloc]init];
     v.view.backgroundColor = [UIColor whiteColor];
+    MC_LoginStatusControl * loginStatus = [MC_LoginStatusControl shareInstance];
+    StartUp *startUp = [[StartUp alloc]init];
+    startUp.delegate = self.pushDeleagte;
     __weak typeof(self) weakSelf = self;
     self.one.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        if (loginStatus.isLogin == YES) {
+            [weakSelf.pushDeleagte pushToViewController:v];
+        }else{
+            [weakSelf.pushDeleagte presentToViewController:startUp];
+        }
     };
     self.two.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        if (loginStatus.isLogin == YES) {
+            [weakSelf.pushDeleagte pushToViewController:v];
+        }else{
+            [weakSelf.pushDeleagte presentToViewController:startUp];
+        }
     };
     self.three.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        if (loginStatus.isLogin == YES) {
+            [weakSelf.pushDeleagte pushToViewController:v];
+        }else{
+            [weakSelf.pushDeleagte presentToViewController:startUp];
+        }
     };
     self.four.pushBlock = ^(){
-        [weakSelf.pushDeleagte pushToViewController:v];
+        if (loginStatus.isLogin == YES) {
+            [weakSelf.pushDeleagte pushToViewController:v];
+        }else{
+            [weakSelf.pushDeleagte presentToViewController:startUp];
+        }
     };
 }
 

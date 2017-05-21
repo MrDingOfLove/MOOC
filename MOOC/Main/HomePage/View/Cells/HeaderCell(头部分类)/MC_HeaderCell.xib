@@ -79,7 +79,7 @@
                     <constraint firstItem="mr1-bQ-Fzq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ysc-Dn-F21"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-62" y="-13"/>
+            <point key="canvasLocation" x="-93.5" y="-36"/>
         </tableViewCell>
     </objects>
     <resources>

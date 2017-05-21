@@ -10,4 +10,5 @@
 
 @protocol MC_PushToViewControllerProtocol <NSObject>
 -(void)pushToViewController:(UIViewController*)viewController;
+-(void)presentToViewController:(UIViewController*)viewController;
 @end
